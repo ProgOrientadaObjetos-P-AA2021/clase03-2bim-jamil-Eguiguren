@@ -30,6 +30,7 @@ public class Principal {
                 + "(2) Para ingresar un Docente\n"
                 + "(3) Para ingresar un Policia\n");
         opcion = sc.nextInt();
+        
         switch (opcion) {
 
             case 1:
