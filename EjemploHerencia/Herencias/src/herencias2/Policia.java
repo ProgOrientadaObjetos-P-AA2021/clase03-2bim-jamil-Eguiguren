@@ -5,17 +5,17 @@
  */
 package herencias2;
 
-
 /**
  *
- * @author reroes
+ * @author jamil
  */
-public class Estudiante extends Persona{
-    private double matricula;
+public class Policia extends Persona {
+     protected String rango;
+     
     
-    public Estudiante(String n, String a, int e, double mat){
+    public Policia(String n, String a, int e, String r){
         super(n, a, e);
-        setMatricula(mat);
+        setRango(r);
     }
     
     @Override
@@ -23,13 +23,13 @@ public class Estudiante extends Persona{
         nombre = n.toUpperCase();    
     }
     
-    public void setMatricula(double mat){
-        matricula = mat;
+       public void setRango(String r){
+        rango = r;
+    }
+       public String getRango(){
+        return rango;
     }
     
-    public double getMatricula(){
-        return matricula;
-    }
     
     /* @Override
     public String toString(){
@@ -41,6 +41,8 @@ public class Estudiante extends Persona{
     @Override
     public String toString(){
     
-        return String.format("%s - %f", super.toString(), getMatricula());
+        return String.format("%s - %f", super.toString(), getRango());
     }
 }
+    
+

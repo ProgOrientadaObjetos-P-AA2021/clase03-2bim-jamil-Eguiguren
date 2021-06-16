@@ -34,6 +34,8 @@ public class Persona {
         edad = n;
     }
     
+    
+    
     public int getEdad(){
         return edad;
     }
@@ -45,10 +47,11 @@ public class Persona {
     public String getApellido(){
         return apellido;
     }
+   
     
     @Override
     public String toString(){
-        return String.format("Nombre: %s - Apellido %s - Edad %d", 
+        return String.format("Nombre: %s - Apellido %s - Edad%d", 
                 getNombre(), getApellido(), getEdad());
     }
     
